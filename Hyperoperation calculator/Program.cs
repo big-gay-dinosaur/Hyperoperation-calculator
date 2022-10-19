@@ -16,6 +16,7 @@ namespace Hyperoperation_calculator
 			//starts with the input
 			long output = input;
 			//what the fuck
+			//ok this sets the order lower because reasons
 			order = (short)(order - 2);
 			//since this starts lower to higher, i start with exponentiation
 			//in higher recursions it will do the previous operation to itself a bunch of times
