@@ -6,8 +6,7 @@ namespace Hyperoperation_calculator
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Hello World!");
-			Console.WriteLine(HyperOperate(3, 5, 3));
+			Console.WriteLine(HyperOperate(Convert.ToInt64(args[0]), Convert.ToInt16(args[1]), Convert.ToInt16(args[2])));
 		}
 
 		static long HyperOperate(long input, short order, short power)
