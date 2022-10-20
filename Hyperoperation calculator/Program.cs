@@ -15,7 +15,6 @@ namespace Hyperoperation_calculator
 		{
 			//starts with the input
 			long output = input;
-			//what the fuck
 			//ok this sets the order lower because reasons
 			order = (short)(order - 2);
 			//since this starts lower to higher, i start with exponentiation
@@ -29,9 +28,10 @@ namespace Hyperoperation_calculator
 			//calls itself again and that's part of the hyperoperation bit
 			//also tries not to infinitely run itself
 				if (order > 3) {
+					//sets output to the hyperoperation result of the lower options
 					output = HyperOperate(output, (short)(order - 1), power);
 				}
-				//
+				//because reasons, i have to do another power
 			output = (long)Math.Pow(output, input);
 			return output;
 		}
