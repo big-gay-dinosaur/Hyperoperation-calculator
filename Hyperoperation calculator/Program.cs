@@ -29,7 +29,7 @@ namespace Hyperoperation_calculator
 			//calls itself again and that's part of the hyperoperation bit
 			//also tries not to infinitely run itself
 				if (order > 3) {
-					HyperOperate(output, (short)(order - 1), power);
+					output = HyperOperate(output, (short)(order - 1), power);
 				}
 				//
 			output = (long)Math.Pow(output, input);
